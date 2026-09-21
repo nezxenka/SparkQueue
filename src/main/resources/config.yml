@@ -1,0 +1,30 @@
+# SparkQueue Configuration
+settings:
+  check-interval-seconds: 1
+  max-queue-size: 5000
+  send-delay-ms: 250
+  fallback-max-players: 100
+
+priority-tiers:
+  admin:
+    weight: 100
+    permission: "sparkqueue.priority.admin"
+  donor:
+    weight: 50
+    permission: "sparkqueue.priority.donor"
+  regular:
+    weight: 1
+    permission: ""
+
+messages:
+  queue-joined: "<green>Joined queue for <yellow>%server%</yellow>. Position: <gold>%position%</gold></green>"
+  queue-left: "<yellow>Left the queue for %server%.</yellow>"
+  queue-position: "<gold>Your position in queue for <yellow>%server%</yellow>: <yellow>%position%</yellow>/<yellow>%total%</yellow></gold>"
+  queue-full: "<red>Queue for %server% is full. Try again later.</red>"
+  not-in-queue: "<red>You are not in any queue.</red>"
+  connecting: "<green>Connecting to %server%...</green>"
+  actionbar-progress: "<gold>Queue: <yellow>%position%</yellow>/<yellow>%total%</yellow> -> <green>%server%</green></gold>"
+  server-offline: "<red>Target server %server% is currently offline or restarting.</red>"
+  server-not-found: "<red>Server %server% does not exist.</red>"
+  players-only: "<red>Only players can join queues.</red>"
+  usage: '<yellow>Usage: /queue \<server> or /queue leave</yellow>'

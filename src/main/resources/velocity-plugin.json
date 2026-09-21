@@ -1,0 +1,9 @@
+{
+  "id": "sparkqueue",
+  "name": "SparkQueue",
+  "version": "1.0",
+  "description": "High-performance priority queue and player matchmaking system for Velocity networks.",
+  "authors": ["nezxenka"],
+  "main": "net.nezxenka.sparkqueue.SparkQueuePlugin",
+  "dependencies": []
+}
